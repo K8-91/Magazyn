@@ -91,10 +91,10 @@ if __name__ == "__main__":
         if question== "add":
             print("Adding to warehouse...")
             new_product={}
-            add1=input("name:")
-            add2=input("quantity:")
-            add3=input("unit:")
-            add4=input("unit_price:")
+            add1=input("Name:")
+            add2=input("Quantity:")
+            add3=input("Unit:")
+            add4=input("Unit_price:")
             add_items(new_product)
             print("Succesfully added to warehouse")
             print("\n")
@@ -112,7 +112,6 @@ if __name__ == "__main__":
             print("{:>15}{:>15}{:>15}{:>15}".format("name", "quantity", "unit", "unit_price"))
             print("-"*(15*4+11))
             get_items(products_list)
-            print(sold_items)
         
         if question == "show_revenue":
             income=get_income(sold_items)
